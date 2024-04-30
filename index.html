@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё резюме</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Пользовательский CSS для цветовой палитры и ссылок -->
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .white{
+            color: white;
+        }
+        .pink-text {
+            color: #ff69b4;
+        }
+        a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+        ul.square {
+            list-style-type: none;
+        }
+        ul.square li::before {
+            content: "\25AA";
+            color: #ff69b4;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h1 class="pink-text">Ивановский Тимофей Владиславович</h1>
+                <p>🏠 Россия, Курская обл., г. Курск, ул. Черняховского 50</p>
+                <p>📧 polinascaraboobs@gmail.com</p>
+                <p>📞 +7 (951) 317-1214</p>
+            <div class="col-md-6 mb-3">
+                <h2 class="pink-text">Образование</h2>
+                <ul class="p-0">
+                    <li>🏫 Курский государственный политехнический колледж</li>
+                    <li>🎓 "Информационные системы и программирование"</li>
+                    <li>🕐 Год окончания: 2025</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2 class="pink-text">Опыт работы</h2>
+                <ul>
+                    <li>Отсутствует</li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="pink-text">💬 Soft Skills</h2>
+                        <ul class="square">
+                            <li>Коммуникация</li>
+                            <li>Адаптивность</li>
+                            <li>Умение работать в команде</li>
+                            <li>Управление временем</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h2 class="pink-text">📈 Hard Skills</h2>
+                        <ul class="square">
+                            <li>Python</li>
+                            <li>Django, DRF, Aiogram, Asyncio, SQLAlchemy</li>
+                            <li>HTML5, CSS3, JS, Bootstrap5</li>
+                            <li>SQL, SQLite, PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="row text-center mb-3">
+                        <div class="col-md-12">
+                            <h2 class="pink-text">❗Есть опыт</h2>
+                            <ul class="square d-inline-block">
+                                <li class="text-start">C#, Kotlin</li>
+                                <li class="text-start">Android SDK, Retrofit</li>
+                                <li class="text-start">Ubuntu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                    <h2 class="pink-text ">Ссылки</h2>
+                    <div class="col-md-8 d-inline-block">
+                        <p class="text-start">Основной сайт: <a href="https://null.pythonanywhere.com/" class="pink-text">Null.com</a></p>
+                        <p class="text-start">TelegramBot: <a href="https://web.telegram.org/k/#@PolinaDutyBot" class="pink-text">@PolinaDutyBot <sup><a href="#" class="white" data-bs-toggle="tooltip" title="Работают с Django REST Framework">*</a></sup></a></p>
+                        <p class="text-start">Сайтик: <a href="https://zubarevApp.pythonanywhere.com/" class="pink-text">Рассписание <sup><a href="#" class="white" data-bs-toggle="tooltip" title="Работают с Django REST Framework">*</a></sup></a></p>
+                        <p class="text-start">Сайтик: <a href="https://ivanchikapp.pythonanywhere.com/" class="pink-text">Библиотека <sup><a href="#" class="white" data-bs-toggle="tooltip" title="Работают с Django REST Framework">*</a></sup></a></p>
+                    </div>
+                    <div class="col-md-4 d-inline-block">
+                        <p >GitHub: <a href="https://github.com/PolinaScrbbs" class="pink-text">@PolinaScrbbs</a></p>
+                        <p>Telegram: <a href="https://web.telegram.org/k/#@QScrbbs" class="pink-text">@QScrbbs</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>
+
+
+
